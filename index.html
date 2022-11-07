@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+            }
+            .keyBoard{
+                max-width: 300px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin: 1px auto;
+                
+            }
+            
+            .keyBoard__btn{
+                width: 100px;
+                height: 60px;
+            }
+            .btnC{
+                width: 300px;
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <p id = 'text_calcu_p'>
+                0
+            </p>
+            <div class="keyBoard">
+                <button class="keyBoard__btn" onclick="char_add(1)">1</button>
+                <button class="keyBoard__btn" onclick="char_add(2)">2</button>
+                <button class="keyBoard__btn" onclick="char_add(3)">3</button>
+                <button class="keyBoard__btn" onclick="char_add(4)">4</button>
+                <button class="keyBoard__btn" onclick="char_add(5)">5</button>
+                <button class="keyBoard__btn" onclick="char_add(6)">6</button>
+                <button class="keyBoard__btn" onclick="char_add(7)">7</button>
+                <button class="keyBoard__btn" onclick="char_add(8)">8</button>
+                <button class="keyBoard__btn" onclick="char_add(9)">9</button>
+                <button class="keyBoard__btn" onclick="char_add(0)">0</button>
+                <button class="keyBoard__btn" onclick="char_add('+')">+</button>
+                <button class="keyBoard__btn" onclick="char_add('-')">-</button>
+                <button class="keyBoard__btn" onclick="char_add('*')">*</button>
+                <button class="keyBoard__btn" onclick="char_add('/')">/</button>
+                <button class="keyBoard__btn" onclick = "btn_c()">C</button>
+            </div>
+            <button class="btnC" onclick = equal()>=</button>
+        </div>
+        <script language="YoptaScript">
+            участковый text внатуре ''
+            участковый text_p внатуре ксива.хулиВыёбываешься('#text_calcu_p')
+            йопта char_add(эээ)жЫ
+                text +внатуре эээ
+                text_p.ухтыжёптыжМалява внатуре text
+            есть
+            йопта equal()жЫ
+                text_p.ухтыжёптыжМалява внатуре ебал(text)
+            есть
+            йопта btn_c()жЫ
+                text внатуре ''
+                text_p.ухтыжёптыжМалява внатуре '0'
+            есть
+        </script>
+        <script src="yopta.js"></script>
+    </body>
+</html>
